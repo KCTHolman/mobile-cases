@@ -19,6 +19,7 @@ body{
     height: 100%;
     display: flex;
     flex-direction: column;
+    position: fixed;
 }
 .box1-banner{
     width:100%;
@@ -28,7 +29,6 @@ body{
     display: flex;
     justify-content: center;
     font-family: 'Montserrat', sans-serif;
-    position:fixed;
 
 }
 .banner-text{
@@ -37,7 +37,6 @@ body{
 
 .box2-nav{
     display: flex;
-    position:fixed;
     flex-direction: row;
     width:100%;
     height:auto;
