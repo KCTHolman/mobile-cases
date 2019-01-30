@@ -1,29 +1,28 @@
 <?php
     include '../../php-includes/db-connection.php';
-    ?>
 
+   
+        $user_email = $_GET['user_email'];
+        $user_password = $_GET['user_password'];
 
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="index.css" type="text/css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
-        crossorigin="anonymous">
-    <title>Homepage</title>
-</head>
-<body>
-<?php include "projects/navbar/navbar.php"; ?>
-    <div class="container-login">
-        <div class="login-title">Login voor klanten</div>
-        <div class="login-screen">
-            <form>
-
-</form>
-        </div>
-    </div>
+   
+    $result = "SELECT user_names
+               FROM users
+               WHERE user_email = '$user_email' 
+               AND user_password = '$user_password'";
+    
+    $db_result = $conn->query($result);
+    
+    if ($db_result->rowCount() != 0){
+        foreach($db_result as $row){
+            $name = $row['user_names'];
+        }
+        
+        echo "Welkom " . $name;
+    }
+    else 
+    {
+        echo 'The username or password is incorrect!';
+        //header("location:login.php?et=1;");
+    }
+?>

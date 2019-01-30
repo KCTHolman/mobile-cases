@@ -1,3 +1,4 @@
+
 <div class="container-homepage">
         <div class="box1-banner">
             <div class="banner-text">Gratis verzending in heel Nederland</div>
@@ -16,6 +17,8 @@
                     <i class="fas fa-search"></i>
                     <i class="fas fa-shopping-cart"></i>
                 </div>
+
             </div>
+
         </div>
     </div>

@@ -1,0 +1,26 @@
+.container-login{
+    width:100%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.login-title{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    height: 5vh;
+}
+.login-screen{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.login-screen input{
+    width: 300px;
+    height:25px;
+    background-color: whitesmoke;
+    border:1px solid #dfdfdf;
+    margin-bottom:25px;
+}
