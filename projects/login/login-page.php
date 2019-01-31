@@ -1,7 +1,10 @@
 <?php
     include '../../php-includes/db-connection.php';
     ?>
-
+<?php
+// Start the session
+session_start();
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -19,7 +22,7 @@
     <title>Homepage</title>
 </head>
 <body>
-<?php include "../navbar/navbar.php"; ?>
+<?php include "../navbar/navbar-later-folder.php"; ?>
 <div class="container-login">
         <div class="login-title">Login voor klanten</div>
         <div class="login-screen">
@@ -28,8 +31,8 @@
                     <input type="text" name="user_email"><br>
                     Wachtwoord<br>
                     <input type="text" name="user_password"><br>
-                    <button>Verzenden</button>
-            
+                    <button>Verzenden</button> <span> nog geen account? <a href="../create-account/create-account.php"> Klik hier </a>
+
                 </form>
         </div>
     </div>

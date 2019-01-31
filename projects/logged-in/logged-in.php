@@ -1,9 +1,10 @@
-
 <?php
     include '../../php-includes/db-connection.php';
     session_start();
+   
         $user_email = $_GET['user_email'];
         $user_password = $_GET['user_password'];
+
    
     $result = "SELECT user_names, user_role
                FROM users

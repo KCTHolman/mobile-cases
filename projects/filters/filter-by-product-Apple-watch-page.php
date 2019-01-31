@@ -1,3 +1,8 @@
+
+<?php
+    include '../../php-includes/db-connection.php';
+    ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,8 +18,8 @@
     <title>Cards</title>
 </head>
 <body>
-<?php include "../navbar/navbar.php"; ?>
     <div class="container-cards">
+    <?php include "../navbar/navbar-later-folder.php"; ?>
             <?php include "filter-by-product-apple-watch.php"; ?>
 </div>
 </body>

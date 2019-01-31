@@ -6,14 +6,14 @@
         <div class="box2-nav ">
 
             <div class="nav-menubar">
-                <div class="nav-logo"><img src="images/XDORIA_205x@2x.png"></div>
+                <a href="../../index.php" class="nav-logo"><img src="../../images/XDORIA_205x@2x.png"></a>
                 <div class="nav-buttons">
-                    <a href="/mobile-cases/projects/product-cards/cards-page.php">Shop</a>
-                    <a href="">Social Shop</a>
-                    <a href="">Contact</a>
+                    <a href="../projects/product-cards/cards-page.php">Shop</a>
+                    <a href="../../index.php">Social Shop</a>
+                    <a href="../../index.php">Contact</a>
                 </div>
                 <div class="nav-icons-right">
-                    <a href="projects/login/login-page.php">inloggen</a>
+                    <a href="../login/login-page.php">inloggen</a>
                     <i class="fas fa-search"></i>
                     <i class="fas fa-shopping-cart"></i>
                 </div>

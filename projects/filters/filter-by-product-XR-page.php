@@ -1,3 +1,10 @@
+<?php
+    include '../../php-includes/db-connection.php';
+    ?>
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,7 +21,7 @@
 </head>
 <body>
     <div class="container-cards">
-    <?php include "../navbar/navbar.php"; ?>
+    <?php include "../navbar/navbar-later-folder.php"; ?>
             <?php include "filter-by-product-XR.php"; ?>
 </div>
 </body>

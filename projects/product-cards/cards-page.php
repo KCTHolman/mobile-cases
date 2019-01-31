@@ -13,10 +13,11 @@
     <title>Cards</title>
 </head>
 <body>
-<?php include "../navbar/navbar.php"; ?>
+<?php include "../navbar/navbar-later-folder.php"; ?>
     <div class="container-cards">
             <?php include "cards.php"; ?>
 
 </div>
+<script src="card.js"></script>
 </body>
 </html>

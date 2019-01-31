@@ -1,5 +1,5 @@
 <?php
-    include '../php-includes/db-connection.php';
+    include 'php-includes/db-connection.php';
     ?>
 
 
@@ -19,64 +19,40 @@
 </head>
 
 <body>
-    <!--     <div class="container-homepage">
-        <div class="box1-banner">
-            <div class="banner-text">Gratis verzending in heel Nederland</div>
-        </div>
-        <div class="box2-nav ">
-
-            <div class="nav-menubar">
-                <div class="nav-logo"><img src="images/XDORIA_205x@2x.png"></div>
-                <div class="nav-buttons">
-                    <a href="">Shop</a>
-                    <a href="">Social Shop</a>
-                    <a href="">Contact</a>
-                </div>
-                <div class="nav-icons-right">
-                    <a href="">inloggen</a>
-                    <i class="fas fa-search"></i>
-                    <i class="fas fa-shopping-cart"></i>
-                </div>
-            </div>
-        </div>
-    </div> -->
-
-    <?php include "projects/navbar-php/navbar-php.php; ?>
+    <?php include "projects/navbar/navbar.php"; ?>
     <div class="box3-slide">
         <img src="images/banner/iphone8_5e1cb170-b3f1-468a-b251-64d1cc30a05f_1600x.jpg">
     </div>
     <div class="box4-products">
-        <div class="products-mobile debug">
-            <div class="mobile-img debug">
+        <a href="projects/filters/filter-by-product-iphoneXS-max.php" class="products-mobile ">
+            <div class="mobile-img ">
                 <img src="images/mobile/iPhoneXsMax_480x.jpg"></div>
-            <div class="mobile-text debug">Iphone XS Max</div>
-        </div>
-        <div class="products-mobile">
+            <div class="mobile-text ">Iphone XS Max</div>
+        </a>
+        <a href="projects/filters/filter-by-product-Iphone-8-page.php" class="products-mobile">
             <div class="mobile-img">
                 <img src="images/mobile/iphone8_silver_480x.jpg"></div>
 
             <div class="mobile-text">Iphone XS</div>
-        </div>
-        <div class="products-mobile">
+        </a>
+        <a href="projects/filters/filter-by-product-XR-page.php" class="products-mobile">
             <div class="mobile-img">
                 <img src="images/mobile/iPhone_Xr_480x.jpg"></div>
 
             <div class="mobile-text">Iphone XR</div>
-        </div>
-        <div class="products-mobile">
+        </a>
+        <a class="products-mobile" href="projects/filters/filter-by-product-Iphone-8-page.php">
             <div class="mobile-img"><img src="images/mobile/iphone8_silver_480x.jpg"></div>
             <div class="mobile-text">Iphone 8 & 8 plus</div>
-        </div>
-        <div class="products-mobile">
-            <a href="projects/filters/filter-by-product-SamsungS9-page.php">
-                <div class="mobile-img"><img src="images/mobile/galaxy-S9plus_480x.jpg"></div>
-                <div class="mobile-text">Samsung S9 & S9+</div>
-            </a>
-        </div>
-        <div class="products-mobile">
+        </a>
+        <a class="products-mobile" href="projects/filters/filter-by-product-SamsungS9-page.php">
+            <div class="mobile-img"><img src="images/mobile/galaxy-S9plus_480x.jpg"></div>
+            <div class="mobile-text">Samsung S9 & S9+</div>
+        </a>
+        <a class="products-mobile" href="projects/filters/filter-by-product-Apple-watch-page.php">
             <div class="mobile-img"><img src="images/mobile/apple_watch_38_480x.jpg"></div>
             <div class="mobile-text">Apple Watch</div>
-        </div>
+        </a>
     </div>
     <div class="box5-youtube"></div>
     <div class="box6-reviews">

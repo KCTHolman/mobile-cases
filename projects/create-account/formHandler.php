@@ -15,8 +15,8 @@
 
         try {
                 $sql = "INSERT INTO users (user_names, user_postalcode, user_streetname, user_housenumber,
-                 user_birthday, user_email, user_password)
-                VALUES ('$usernames', '$postalcode', '$streetname', '$housenumber', '$birthday' , '$email', '$user_password')";
+                 user_birthday, user_email, user_password, user_role)
+                VALUES ('$usernames', '$postalcode', '$streetname', '$housenumber', '$birthday' , '$email', '$user_password', 'user')";
                 
                 // use exec() because no results are returned
                 $conn->exec($sql);

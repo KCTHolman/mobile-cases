@@ -22,11 +22,11 @@
 </head>
 
 <body>
-<?php include "../navbar/navbar.php"; ?>
+<?php include "../navbar/navbar-later-folder.php"; ?>
     <div class="container-login">
         <div class="box3-title-form"> Maak uw account aan</div>
         <div class="box4-form-create-account">
-            <form action="formHandler.php" method="get">
+            <form action="formHandler.php" method="GET">
                 Voor en -achternaam<br>
                 <input type="text" name="user_names"><br>
                 Postcode<br>
