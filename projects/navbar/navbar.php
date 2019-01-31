@@ -8,9 +8,10 @@
             <div class="nav-menubar">
                 <div class="nav-logo"><img src="images/XDORIA_205x@2x.png"></div>
                 <div class="nav-buttons">
-                    <a href="/mobile-cases/projects/product-cards/cards-page.php">Shop</a>
-                    <a href="">Social Shop</a>
-                    <a href="">Contact</a>
+                    <a class="nav-item" href="/mobile-cases/projects/product-cards/cards-page.php">Shop</a>
+                    <a class="nav-item"href="">Social Shop   </a>
+                    <a class="nav-item"href="">Contact   </a>
+                    <?php include "projects/logged-in/admin-menu.php" ?>
                 </div>
                 <div class="nav-icons-right">
                     <a href="projects/login/login-page.php">inloggen</a>

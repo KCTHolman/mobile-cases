@@ -42,7 +42,7 @@
                 Wachtwoord<br>
                 <input type="text" name="user_password"><br>
                 <div class="button-row"> <button class=form-button type="submit">Verzend</button>
-                    Al een account? <a href="">log in</a></div>
+                    Al een account? <a href="../login/login-page.php">log in</a></div>
             </form>
         </div>
     </div>

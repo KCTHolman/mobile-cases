@@ -150,4 +150,12 @@ flex-direction: column;
 .box7-info{
 
 }
+.nav-buttons a{
+    margin-left:20px;
+}
 
+.nav-buttons a:hover{
+    color:darkturquoise;
+    transition: ease-in-out;
+    transition-duration: 0.5s
+}
