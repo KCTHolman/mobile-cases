@@ -22,6 +22,13 @@
 <body>
 <?php include "projects/navbar/navbar.php"; ?>
     <div class="box3-slide">
+   <!--  <div class="slide-text">
+<h3>De keuze is duidelijk</h3><br>
+
+Precisie gemaakt om een val van 3 meter te overleven.<br>
+Echt metaal, echte bescherming, echte stijl.
+<br><br>
+                <button href="/mobile-cases/projects/product-cards/cards-page.php" class="button-slide">Koop nu</button></div> -->
         <img src="images/banner/iphone8_5e1cb170-b3f1-468a-b251-64d1cc30a05f_1600x.jpg">
     </div>
     <div class="box4-products">
@@ -60,34 +67,29 @@
     </div>
     <div class="box6-reviews">
         <div class="reviews-item">
-            <div class="review-img"><img src="images/reviews/0828_forbes-logo_650x455_99fd6f6c-b2be-4067-9d24-b467c91fcb26_400x@2x.jpg"></div>
-            <div class="review-text">"The X-Doria cases are slim, stylish, and protective, and basically offer
-                everything I look for in a case. "
+            <div class="review-img"><img src="images/reviews/tweakers.png"></div>
+            <div class="review-text">"
+                
+                De X-doria hoesjes zijn stijlvol, dun en beschermen heel goed. Geen betere bescherming momenteel op de markt"
 
-                — MacRumors</div>
+                <br><br>— Tweakers</div>
         </div>
         <div class="reviews-item">
-            <div class="review-img"><img src="images/reviews/logo_dfe48a9c-caee-4e8d-8015-c4fb6fcdb7a0_400x@2x.png"></div>
-            <div class="review-text">"I really liked the X-Doria Defense Lux case I tested out for the iPhone 6/6s.
+            <div class="review-img"><img src="images/reviews/kassa.jpg"></div>
+            <div class="review-text">"Kwam het beste uit de verf met onze mobielje hoesjes test"
 
-                The company is going all out with new cases for the iPhone X. The iPhone X Case Defense Shield -one of
-                the samples sitting on my desk right now - offers military grade drop protection to keep that glass
-                from shattering."
-
-                — Forbes</div>
+                <br><br> — KASSA</div>
         </div>
         <div class="reviews-item">
-            <div class="review-img"><img src="images/reviews/logo_techradar_400x@2x.png"></div>
-            <div class="review-text">"Protection for your pricey iPhone 8 can come at a high cost, but it doesn’t have
-                to. The X-Doria Defense Clear case costs less than most ruggedized cases.This case is no frills, but if
-                all you’re looking for is protection on the cheap, look no further."
+            <div class="review-img"><img src="images/reviews/mediamarkt.jpg"></div>
+            <div class="review-text">"Bestlopende producten sinds tijden"
 
-                — TechRadar</div>
+                <br><br>— Mediamarkt</div>
         </div>
     </div>
     <div class="box7-info"></div>
     </div>
-
+<!--     <?php include "projects/footer/footer.php"; ?> -->
 </body>
 
 </html>

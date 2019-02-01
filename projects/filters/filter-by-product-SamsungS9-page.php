@@ -22,5 +22,6 @@
     <?php include "../navbar/navbar-later-folder.php"; ?>
             <?php include "filter-by-product-samsungs9.php"; ?>
 </div>
+<?php include "../footer/footer.php"; ?>
 </body>
 </html>

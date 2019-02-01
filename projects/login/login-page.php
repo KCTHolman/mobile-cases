@@ -30,9 +30,10 @@ session_start();
                     Email<br>
                     <input type="text" name="user_email"><br>
                     Wachtwoord<br>
-                    <input type="text" name="user_password"><br>
+                    <input type="password" name="user_password"><br>
                     <button class="button-send">Verzenden</button> <span> nog geen account? <a href="../create-account/create-account.php"> Klik hier </a>
 
                 </form>
         </div>
+        <?php include "../footer/footer.php"; ?>
     </div>

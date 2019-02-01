@@ -29,6 +29,6 @@
 <?php include "../navbar/navbar-later-folder.php"; ?>
 
 <div class="admin-container"><div class="admin-item">admin-container</div>     </div>
-
+<?php include "../footer/footer.php"; ?>
 </body>
 </html>

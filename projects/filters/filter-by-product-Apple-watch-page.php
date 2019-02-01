@@ -21,6 +21,7 @@
     <div class="container-cards">
     <?php include "../navbar/navbar-later-folder.php"; ?>
             <?php include "filter-by-product-apple-watch.php"; ?>
-</div>
+        </div>
+        <?php include "../footer/footer.php"; ?>
 </body>
 </html>

@@ -53,7 +53,7 @@
 
 
     </div>
-
+    <?php include "../projects/footer/footer.php"; ?>
 </body>
 
 </html>

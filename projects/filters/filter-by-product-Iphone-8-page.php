@@ -22,5 +22,6 @@
     <?php include "../navbar/navbar-later-folder.php"; ?>
             <?php include "filter-by-product-iphone-8.php"; ?>
 </div>
+<?php include "../footer/footer.php"; ?>
 </body>
 </html>

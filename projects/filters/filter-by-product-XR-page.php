@@ -24,5 +24,6 @@
     <?php include "../navbar/navbar-later-folder.php"; ?>
             <?php include "filter-by-product-XR.php"; ?>
 </div>
+<?php include "../footer/footer.php"; ?>
 </body>
 </html>

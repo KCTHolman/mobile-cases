@@ -20,4 +20,6 @@
 </div>
 <script src="card.js"></script>
 </body>
+<?php include "../footer/footer.php"; ?>
+
 </html>
