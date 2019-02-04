@@ -2,18 +2,19 @@ console.log('Hello world!');
 
 //parameter is input voor een functie
 
-
+var key = document.getElementsByClassName('cards')
 // met deze functie check log ik welke unieke nummer het heeft
-/* function getProductInfo(key){
-    console.log(key);
-}
- */
-
 
 function getProductInfo(key){
+    console.log(key);
+};
+
+
+
+//function getProductInfo(key){
 
     
-}
+
 
 
 
