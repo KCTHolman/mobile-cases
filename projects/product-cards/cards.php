@@ -13,7 +13,7 @@
         echo    '<div action="Ajax-cards.php" method="GET" class="cards"' . 'id=card' . $row['product_id'] . ' onclick="getProductInfo (' . ')">
         <div class="card-image"><img src="../../images/products/' . $row['product_image_1'] . '"></div>
         <div class="card-name">' . $row['product_name'] . '</div>
-        <div class="card-price">'. $row ['product_price'] . '</div>
+        <div class="card-price">€ '. $row ['product_price'] . '</div>
     </div>';
     }
     $conn = null;

@@ -10,6 +10,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon"
+ href="images/favicon.png">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="index.css" type="text/css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
@@ -63,7 +65,7 @@ Echt metaal, echte bescherming, echte stijl.
         </a>
     </div>
     <div class="box5-youtube">
-    <iframe  class="box5-youtubevid"  src="https://www.youtube.com/embed/gcEGGnNt3rU" allow="autoplay" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe  class="box5-youtubevid"  src="https://www.youtube.com/embed/gcEGGnNt3rU"allow="autoplay" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
     <div class="box6-reviews">
         <div class="reviews-item">
