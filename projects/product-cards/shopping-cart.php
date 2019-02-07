@@ -1,3 +1,6 @@
+<link href="shoppingcard.css" type="text/css" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
 <?php   session_start();
  include "../../php-includes/db-connection.php";  
  
@@ -9,7 +12,8 @@
 
  $newShoppingCartItem = array('id' => $productID, 'amount' => $productAmount, 'prize' => $productPrice);
 
- array_push($shoppingCart,$newShoppingCartItem); /// is dit nou een array teveel??? synta lijkt mij juist
+ array_push($shoppingCart,$newShoppingCartItem);
+ 
 
  $_SESSION['shopping-cart'] = $shoppingCart; 
 
@@ -30,11 +34,13 @@
  function printShopCart($ARRAY){
      echo "<br>";
     for ($i=0; $i < count($ARRAY); $i++) { 
-    echo 'Product index: ' . $i;
-    echo ' | Product id: ' . $ARRAY[$i]['id'];
-    echo ' | product prize:' . $ARRAY[$i]['prize'];
-    echo ' | Product amount: ' . $ARRAY[$i]['amount'];
-    echo '<br>';
+    echo '<div class="shoppingcard">
+        <div class="shoppingcard-product">product id '. $ARRAY[$i]['id'] . '</div>
+        <div class="shoppingcard-amount">prijs ' . $ARRAY[$i]['prize'] . '</div>
+        <div class="shoppingcard-price"> aantal ' . $ARRAY[$i]['amount'] . '</div>
+        <div class="delete-item"><form action="delete-item.php" 
+        method="get"><button name="delete_item" value="' . $i . '"><i class="fas fa-trash-alt"></i></button></form></div>
+    </div>';
     } // in deze echo moet de verwijderknop met _GET in voorkomen. 
     echo '<br>';
 
@@ -48,12 +54,8 @@ array_push($shoppingCart, $newShoppingCartItem);
 //verwijderknop
 
 $index = searchForId(5, $shoppingCart);
-$shoppingCart = removeElementFromArray($index, $shoppingCart);
+//$shoppingCart = removeElementFromArray($index, $shoppingCart);
 //removeElementFromArray(   DE _GET VARIABLE MOET HIERIN   /, $shoppingCart);
 
-function removeElementFromArray($ELEMENT_INDEX, $ARRAY){
-   unset($ARRAY[$ELEMENT_INDEX]);
-   $ARRAY = array_values($ARRAY);
-   return $ARRAY;
-}
+
  ?>
