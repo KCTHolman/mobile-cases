@@ -13,11 +13,24 @@
     <title>Cards</title>
 </head>
 <body>
-<?php include "../navbar/navbar-later-folder.php"; ?>
-    <div class="container-cards">
-            <?php include "cards.php"; ?>
+<?php include "../navbar/navbar-later-folder.php";
+   session_start(); ?>
 
+
+<div class="wrapper-card debug">
+
+        <div class="left-filters debug">
+        <div class="empty-space"></div>
+        <ul>
+            <li>Iphone</li>
+            <li>Samsung</li>
+        </ul>
+    </div><div class="container-cards debug">
+    <div class="empty-space"></div>
+    <?php include "cards.php"; ?>
 </div>
+</div>
+
 <script src="card.js"></script>
 </body>
 <?php include "../footer/footer.php"; ?>

@@ -8,7 +8,7 @@
 
 <?php 
  include "../../php-includes/db-connection.php";      
- 
+   session_start();
 
  $onecard = $_GET['singleproduct'];
 
@@ -23,17 +23,25 @@
         echo     '<div class="infoleft ">
         <img src="../../images/products/' . $row['product_image_1'] . '">
     </div>
-    <div class="inforight">
-        <div class="product-info-title">' . $row['product_name'] . '</div>
-        <div class="product-info-price">' . $row['product_price'] . '</div>
-        <div class="product-info-review">*****</div>
-        <div class="to-cart">
-            <div class="product-info-quantity">
-                <input class="number-cart" type="number">
+    <form action="shopping-cart.php" method="GET">
+        <div class="inforight">
+            <div class="product-info-title">' . $row['product_name'] . '
+                <input type="hidden" name="product_id" value='. $row['product_id'] . '></input></div>
+            <div class="product-info-price">
+                <input type="hidden" name="product_price" value=' . $row['product_price'] . '></div>
+            <div class="product-info-review">*****</div>
+            <div class="to-cart">
+    
+                <div class="product-info-quantity">
+    
+                    <input class="number-cart" type="number" name="amount_cart">
+                </div>
+                <button class="product-info-cart">Toevoegen</button>
+    
             </div>
-            <button class="product-info-cart">Toevoegen</button>
-        </div>
-        <div class="product-info-description">
-            ' . $row['product_text'] . '
-        </div>';
+    </form>
+    
+    <div class="product-info-description">
+        ' . $row['product_text'] . '
+    </div>';
     }
