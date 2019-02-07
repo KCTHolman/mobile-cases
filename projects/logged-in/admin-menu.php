@@ -7,15 +7,12 @@ if (isset($_SESSION['role'])){
         echo '<a class="nav-item" href="projects/admin-page/admin-page-page.php">Admin pagina</a>';
     }
      else { 
-        echo '<p></p>';
+        echo "<p></p>";
     
     }
 }
 else{
     echo "<p></p>";
 }
-    
-
-
 
 ?>

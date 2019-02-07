@@ -8,7 +8,7 @@
             <div class="nav-menubar">
                 <a href="../../index.php" class="nav-logo"><img src="../../images/XDORIA_205x@2x.png"></a>
                 <div class="nav-buttons">
-                    <a href="../projects/product-cards/cards-page.php">Shop</a>
+                    <a href="../product-cards/cards-page.php">Shop</a>
                     <a href="../../index.php">Social Shop</a>
                     <a href="../../index.php">Contact</a>
                 </div>

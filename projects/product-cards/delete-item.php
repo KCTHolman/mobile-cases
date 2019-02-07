@@ -16,4 +16,6 @@ function removeElementFromArray($ELEMENT_INDEX, $ARRAY){
 
  }
 var_dump($shoppingCart);
+
+header("location:/mobile-cases/projects/product-cards/push-product.php");
 ?>
