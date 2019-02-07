@@ -37,10 +37,10 @@ if(isset($_SESSION['amount_cart'])){
 
 
  $shoppingCart = array(
-/*     array("id"=>"1","prize"=>"24", "amount" =>1 ),
+    array("id"=>"1","prize"=>"24", "amount" =>1 ),
     array("id"=>"2","prize"=>"25", "amount" =>1 ),
     array("id"=>"3","prize"=>"14","amount" =>1 ),
-    array("id"=>"4","prize"=>"3", "amount" =>1 ), */
+    array("id"=>"4","prize"=>"3", "amount" =>1 ),
     
 
  ); //Array voor shoppingCart items;
@@ -50,7 +50,7 @@ if(isset($_SESSION['amount_cart'])){
  //array_push($shoppingCart, $newShoppingCartItem);  // hiermee push ik een nieuw item in mijn session array 
 
  
- //var_dump($shoppingCart); 
+ var_dump($shoppingCart); 
 
  $_SESSION['shopping-cart'] = $shoppingCart; 
 
