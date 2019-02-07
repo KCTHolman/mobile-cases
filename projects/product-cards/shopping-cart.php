@@ -1,8 +1,9 @@
 <link href="shoppingcard.css" type="text/css" rel="stylesheet">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 
-<?php   session_start();
+<?php   
  include "../../php-includes/db-connection.php";  
+ session_start();
  
  $productID = $_GET['product_id'];
  $productPrice = $_GET['product_price'];
@@ -17,10 +18,7 @@
 
  $_SESSION['shopping-cart'] = $shoppingCart; 
 
- var_dump ($shoppingCart);
- var_dump ($productID);   //
- var_dump ($productAmount);// moet ik deze 3 in de functie opnieuw beschrijven ???? want in function printShopCart kent hij ze niet meer
- var_dump ($productPrice);  //
+
 
  function searchForId($ID, $ARRAY) {       
     foreach ($ARRAY as $key => $val) {      
@@ -59,3 +57,5 @@ $index = searchForId(5, $shoppingCart);
 
 
  ?>
+
+ <a href="cards-page.php">terug naar card page</a>

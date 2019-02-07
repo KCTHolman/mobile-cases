@@ -14,7 +14,9 @@
 </head>
 <body>
 <?php include "../navbar/navbar-later-folder.php";
-   session_start(); ?>
+   session_start(); 
+   
+   ?>
 
 
 <div class="wrapper-card debug">
@@ -24,15 +26,19 @@
         <ul>
             <li>Iphone</li>
             <li>Samsung</li>
+            
         </ul>
-    </div><div class="container-cards debug">
+        <?php var_dump($_SESSION['shopping-cart'])?>
+    </div>
+    <div class="container-cards debug">
     <div class="empty-space"></div>
     <?php include "cards.php"; ?>
 </div>
+<?php var_dump($_SESSION['shopping-cart'])?>
 </div>
 
 <script src="card.js"></script>
 </body>
-<?php include "../footer/footer.php"; ?>
+<!-- <?php include "../footer/footer.php"; ?> -->
 
 </html>

@@ -14,12 +14,13 @@
                     <?php include "projects/logged-in/admin-menu.php" ?>
                 </div>
                 <div class="nav-icons-right">
-                    <a href="projects/login/login-page.php">inloggen</a>
+                    <a href="projects/login/login-page.php"><?php include "inlog-button-navbar.php" ?></a>
                     <i class="fas fa-search"></i>
                     <i class="fas fa-shopping-cart"></i>
                 </div>
 
             </div>
+            <div class="empty-space"></div>
 
         </div>
     </div>

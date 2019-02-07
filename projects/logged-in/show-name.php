@@ -1,7 +1,13 @@
 <?php
     include 'php-includes/db-connection.php';
 
-Echo $_SESSION['user'];
+if (isset($_SESSION['user'])){
+    echo $_SESSION['user'];
+}
+else{
+    echo "";
+}
+
 
 ?>
 

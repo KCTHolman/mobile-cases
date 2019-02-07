@@ -23,7 +23,7 @@
         echo     '<div class="infoleft ">
         <img src="../../images/products/' . $row['product_image_1'] . '">
     </div>
-    <form action="shopping-cart.php" method="GET">
+    <form action="push-product.php" method="GET">
         <div class="inforight">
             <div class="product-info-title">' . $row['product_name'] . '
                 <input type="hidden" name="product_id" value='. $row['product_id'] . '></input></div>
@@ -45,3 +45,7 @@
         ' . $row['product_text'] . '
     </div>';
     }
+
+    var_dump($_SESSION['shopping-cart']);
+
+    ?>

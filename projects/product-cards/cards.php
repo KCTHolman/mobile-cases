@@ -2,12 +2,12 @@
 
     //CARD.PHP
 
-    include "../../php-includes/db-connection.php";        
+    include "../../php-includes/db-connection.php";       
 
     $sql_querie = "SELECT product_id, product_image_1, product_text, product_brand, product_price, product_name FROM products";
     
     $db_result = $conn->query($sql_querie);  
-
+    var_dump($_SESSION['shopping-cart']);
     foreach ($db_result as $row)
     {            
         echo    ' <a href="single-card.php?singleproduct='. $row['product_id'] . '"><div action="Ajax-cards.php" method="GET" class="cards"' . 'id=card' . $row['product_id'] . ' onclick="getProductInfo (' . ')">
