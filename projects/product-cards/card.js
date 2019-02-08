@@ -10,14 +10,7 @@ function getProductInfo(key){
 };
 
 
-
 //function getProductInfo(key){
-
-    
-
-
-
-
 
 // var card = document.getElementsByClassName('cards');
 

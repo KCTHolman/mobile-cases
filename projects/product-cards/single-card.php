@@ -5,10 +5,21 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
         crossorigin="anonymous">
 
+        
+
 
 <?php 
  include "../../php-includes/db-connection.php";      
    session_start();
+   include "../navbar/navbar-later-folder.php";
+
+   if (!isset( $_SESSION['shopping-cart'])){
+    $shoppingCart = [];
+ }
+
+ else {
+    $shoppingCart= $_SESSION['shopping-cart'];
+ }
 
  $onecard = $_GET['singleproduct'];
 
@@ -20,10 +31,10 @@
   
  foreach ($data as $row);
 {   
-        echo     '<div class="infoleft ">
+        echo     '<div class="container-cards"><div class="infoleft ">
         <img src="../../images/products/' . $row['product_image_1'] . '">
     </div>
-    <form action="push-product.php" method="GET">
+    <form action="shopping-cart.php" method="GET">
         <div class="inforight">
             <div class="product-info-title">' . $row['product_name'] . '
                 <input type="hidden" name="product_id" value='. $row['product_id'] . '></input></div>
@@ -36,16 +47,15 @@
     
                     <input class="number-cart" type="number" name="amount_cart">
                 </div>
-                <button class="product-info-cart">Toevoegen</button>
+                <a href="shopping-cart"><button class="product-info-cart">Toevoegen</button><a/>
     
             </div>
     </form>
     
     <div class="product-info-description">
         ' . $row['product_text'] . '
-    </div>';
+    </div></div>';
     }
 
-    var_dump($_SESSION['shopping-cart']);
 
     ?>

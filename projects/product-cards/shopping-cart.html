@@ -16,16 +16,8 @@
     <title>Document</title>
 </head>
 <body>
-    <?php
-   if (!isset( $_SESSION['shopping-cart'])){
-    $shoppingCart = [];
- }
- else {
-    $shoppingCart= $_SESSION['shopping-cart'];
- }
-   ?>
     <div class="container-shoppingcart">
-<?php include "../product-cards/push-product.php" ?>
+<?php include ..\projects\product-cards\push-product.php ?>
     </div>
 </body>
 </html>

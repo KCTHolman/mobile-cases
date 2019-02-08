@@ -15,26 +15,27 @@
 <body>
 <?php include "../navbar/navbar-later-folder.php";
    session_start(); 
-   
+   if (!isset( $_SESSION['shopping-cart'])){
+    $shoppingCart = [];
+ }
+
+ else {
+    $shoppingCart= $_SESSION['shopping-cart'];
+ }
    ?>
 
-
-<div class="wrapper-card debug">
-
-        <div class="left-filters debug">
+<div class="wrapper-card ">
+        <div class="left-filters ">
         <div class="empty-space"></div>
         <ul>
             <li>Iphone</li>
-            <li>Samsung</li>
-            
+            <li>Samsung</li>      
         </ul>
-        <?php var_dump($_SESSION['shopping-cart'])?>
     </div>
-    <div class="container-cards debug">
+    <div class="container-cards ">
     <div class="empty-space"></div>
     <?php include "cards.php"; ?>
 </div>
-<?php var_dump($_SESSION['shopping-cart'])?>
 </div>
 
 <script src="card.js"></script>

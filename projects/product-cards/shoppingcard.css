@@ -3,20 +3,28 @@
     flex-direction: row;
     width: 70%;
     height: 200px;
+    justify-content: center;
+    align-content: center;
+    font-family: 'Montserrat', sans-serif;
 }
 .shoppingcard-product{
     height: 200px;
     width: 20%;
-    background-color: rgb(95, 105, 95)
+    background-color: rgb(95, 105, 95);
 }
 .shoppingcard-amount{
     height: 200px;
     width: 20%;
-    background-color: rgb(153, 153, 172)
-    
+    background-color: rgb(153, 153, 172);   
 }
 .shoppingcard-price{
     height: 200px;
     width: 20%;
-    background-color: rgb(151, 132, 148)
+    background-color: rgb(151, 132, 148);
+}
+.container-shoppingcart{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: row;
 }

@@ -17,33 +17,9 @@
 
 <body>
 <?php include "../navbar/navbar-later-folder.php"; ?>
-<!--     <div class="empty-space"></div>
-    <div class="container-product-info ">
-        <div class="infoleft ">
-            <img src="../../images/products/468206_XDoria_DefenseLux_GalaxyS9plus_Purple-Ballistic-Nylon_00_1024x1024.jpg">
-        </div> -->
-        
-<!--         <div class="inforight">
-            <div class="product-info-title">iPhone 7 & iPhone 8 Case Defense Lux</div>
-            <div class="product-info-price">€39,50</div>
-            <div class="product-info-review">*****</div>
-            <div class="to-cart">
-                <div class="product-info-quantity">
-                    <input class="number-cart" type="number">
-                </div>
-                <button class="product-info-cart">Toevoegen</button>
-            </div>
-            <div class="product-info-description">
-                Defense Lux by X-Doria brings together refined luxury and durability to create the ultimate iPhone 8 /
-                iPhone 7 protective case.
-            </div>
-        </div> -->
-
         <?php include "../product-cards/single-card.php"; ?>
-
     </div>
     <?php include "../footer/footer.php"; ?>
-
 </body>
 
 </html>
